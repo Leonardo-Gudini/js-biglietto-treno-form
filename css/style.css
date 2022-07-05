@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*
+SECTION BIGLIETTO
+*/
+#biglietto{
+    display: none;
+}
+
+#biglietto.mostra{
+    display: inline-block;
+}

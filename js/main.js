@@ -1,9 +1,12 @@
 const genera = document.getElementById("genera");
+const resetta = document.getElementById("resetta");
+
 
 genera.addEventListener("click",
 
     function(){
-        
+        const biglietto = document.getElementById("biglietto");
+        biglietto.classList.add("mostra");
 
 
         const nomeCognome = document.getElementById("nomeCognome").value;
@@ -39,6 +42,16 @@ genera.addEventListener("click",
             prezzo.innerHTML = prezzoBiglietto.toFixed(2);
             tipologiaBiglietto.innerHTML = "Standard"
         }
+    }
+);
+
+resetta.addEventListener("click",
+
+    function(){
+
+        const biglietto = document.getElementById("biglietto");
+        biglietto.classList.remove("mostra");
+
     }
 );
 
