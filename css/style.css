@@ -4,6 +4,79 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #444;
+}
+
+header h1{
+    color: white;
+    margin: 50px 50px 0 50px;
+}
+
+
+form{
+    background-color: white;
+    position: absolute;
+    padding: 30px;
+    width: 400px;
+    margin: 25px 50px;
+    border-radius: 20px;
+}
+
+section#biglietto{
+    background-color: white;
+    right: 50px;
+    position: absolute;
+    padding: 30px;
+    width: 650px;
+    margin: 25px 50px;
+    border-radius: 20px;
+}
+
+.nome-cognome, .chilometri, .fascia-eta{
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.nome-cognome>*,
+.chilometri>*,
+.fascia-eta>*,
+button{
+    margin: 0 10px;
+}
+
+input, select{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    text-align: right;
+}
+
+.nome-cognome,
+.chilometri,
+.fascia-eta,
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#genera{
+    padding: 5px;
+    border: 5px solid darkgreen;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+
+#resetta{
+    padding: 5px;
+    border: 5px solid darkred;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+
 /*
 SECTION BIGLIETTO
 */
@@ -13,4 +86,26 @@ SECTION BIGLIETTO
 
 #biglietto.mostra{
     display: inline-block;
+}
+
+#containerBiglietto{
+    display: flex;
+}
+
+.nome-passeggero{
+    margin: 10px 60px 0 30px;
+}
+
+.nome-passeggero h4{
+    margin-top: 20px;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+ul li{
+    padding: 10px 30px;
 }

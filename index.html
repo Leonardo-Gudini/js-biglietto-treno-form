@@ -16,17 +16,17 @@
 
     <main>
         <form>
-            <div>
+            <div class="nome-cognome">
                 <label for="nomeCognome">Nome Cognome</label>
                 <input type="text" name="nomeCognome" id="nomeCognome" placeholder="Es. Mario Rossi" >
             </div>
 
-            <div>
+            <div class="chilometri">
                 <label for="chilometri">Chilometri che devi percorrere</label>
                 <input type="number" name="chilometri" id="chilometri" placeholder="Es. 150" >
             </div>
 
-            <div>
+            <div class="fascia-eta">
                 <label for="fasciaEta">Fascia d'età</label>
                 <select name="fasciaEta" id="fasciaEta">
                     <option value="minorenne">Minorenne</option>
@@ -35,9 +35,10 @@
                 </select>
             </div>
 
-            <div>
-                <button id="genera" type="button">Genera</button>
+            <div class="btn-container">
                 <button id="resetta" type="button">Resetta</button>
+                <button id="genera" type="button">Genera</button>
+                
             </div>
         </form>
 
@@ -46,9 +47,9 @@
             <h2>Il tuo Biglietto</h2>
 
             <div id="containerBiglietto">
-                <div>
-                    <h4>Nome Passeggero</h4>
-                    <h5 id="nomePasseggero"></h5>
+                <div class="nome-passeggero">
+                    <h5>Nome Passeggero</h5>
+                    <h4 id="nomePasseggero"></h4>
                 </div>
 
                 <ul>

@@ -31,15 +31,15 @@ genera.addEventListener("click",
          if(fasciaEta == "minorenne"){
             const sconto20 = prezzoBiglietto / 100 * 20;
             tipologiaBiglietto.innerHTML = "Sconto Young"
-            prezzo.innerHTML = (prezzoBiglietto - sconto20).toFixed(2);
+            prezzo.innerHTML = (prezzoBiglietto - sconto20).toFixed(2) + "€";
 
         } else if (fasciaEta == "over65") {
             const sconto40 = prezzoBiglietto / 100 * 40;
             tipologiaBiglietto.innerHTML = "Sconto Silver"
-            prezzo.innerHTML = (prezzoBiglietto - sconto40).toFixed(2);
+            prezzo.innerHTML = (prezzoBiglietto - sconto40).toFixed(2) + "€";
             
         } else {
-            prezzo.innerHTML = prezzoBiglietto.toFixed(2);
+            prezzo.innerHTML = prezzoBiglietto.toFixed(2) + "€";
             tipologiaBiglietto.innerHTML = "Standard"
         }
     }
