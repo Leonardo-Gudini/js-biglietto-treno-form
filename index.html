@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto del Treno</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -13,15 +15,15 @@
     </header>
 
     <main>
-        <form action="#">
+        <form>
             <div>
                 <label for="nomeCognome">Nome Cognome</label>
-                <input type="text" name="nomeCognome" id="nomeCognome" placeholder="Es. Mario Rossi" required>
+                <input type="text" name="nomeCognome" id="nomeCognome" placeholder="Es. Mario Rossi" >
             </div>
 
             <div>
                 <label for="chilometri">Chilometri che devi percorrere</label>
-                <input type="number" name="chilometri" id="chilometri" placeholder="Es. 150" required>
+                <input type="number" name="chilometri" id="chilometri" placeholder="Es. 150" >
             </div>
 
             <div>
@@ -34,8 +36,8 @@
             </div>
 
             <div>
-                <button id="genera" type="submit">Genera</button>
-                <button id="reset" type="submit">Resetta</button>
+                <button id="genera" type="button">Genera</button>
+                <button id="reset" type="button">Resetta</button>
             </div>
         </form>
 
