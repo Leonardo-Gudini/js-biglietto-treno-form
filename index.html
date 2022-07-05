@@ -8,6 +8,73 @@
 </head>
 <body>
 
+    <header>
+        <h1 id="titolo">Calcola il prezzo del biglietto</h1>
+    </header>
+
+    <main>
+        <form action="#">
+            <div>
+                <label for="nomeCognome">Nome Cognome</label>
+                <input type="text" name="nomeCognome" id="nomeCognome" placeholder="Es. Mario Rossi" required>
+            </div>
+
+            <div>
+                <label for="chilometri">Chilometri che devi percorrere</label>
+                <input type="number" name="chilometri" id="chilometri" placeholder="Es. 150" required>
+            </div>
+
+            <div>
+                <label for="fasciaEta">Fascia d'età</label>
+                <select name="fasciaEta" id="fasciaEta">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
+                </select>
+            </div>
+
+            <div>
+                <button id="genera" type="submit">Genera</button>
+                <button id="reset" type="submit">Resetta</button>
+            </div>
+        </form>
+
+        <section id="biglietto">
+
+            <h2>Il tuo Biglietto</h2>
+
+            <div id="containerBiglietto">
+                <div>
+                    <h4>Nome Passeggero</h4>
+                    <h5 id="nomePasseggero"></h5>
+                </div>
+
+                <ul>
+                    <li>
+                        <h6>Offerta</h6>
+                        <p id="tipologiaBiglietto"></p>
+                    </li>
+
+                    <li>
+                        <h6>Carrozza</h6>
+                        <p id="carrozza"></p>
+                    </li>
+
+                    <li>
+                        <h6>Codice CP</h6>
+                        <p id="prenotazione"></p>
+                    </li>
+
+                    <li>
+                        <h6>Costo Biglietto</h6>
+                        <p id="prezzo"></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
     
+
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
